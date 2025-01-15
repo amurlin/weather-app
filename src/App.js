@@ -1,8 +1,8 @@
 
 import { useEffect, useState } from "react";
 import { citiesFilter } from "./utils/CitiesFilter";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from '@awesome.me/kit-KIT_CODE/icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faLocationDot } from '@awesome.me/kit-KIT_CODE/icons';
 
 
 function App() {
@@ -67,7 +67,7 @@ function App() {
       </div>
       <div className="z-10 inset-0 flex items-center justify-center absolute box-border">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[210px] h-[210px] flex flex-col items-center overflow-hidden box-border">
-          <div className="top-1/2 left-1/2 bg-[#0F141E] rounded-full w-[100px] h-[100px] box-border"></div>
+          <div className="top-1/2 left-1/2 bg-[#0F141E] rounded-full w-[100px] h-[100px] box-border" style={{ clipPath: "polygon(0 0, 50% 0, 50% 100%, 0 100%)"}}></div>
           <div>
           <div className="border border-gray-300 rounded-full w-[140px] h-[140px] bg-[#F3F4F6] box-border"></div>
           </div>
@@ -106,9 +106,9 @@ function App() {
                 <p></p>
                 <p></p>
               </div>
-              <div>
+              {/* <div>
               <FontAwesomeIcon icon={faLocationDot} />
-              </div>
+              </div> */}
             </div>
             <img alt="moon" src="./img/icon-moon.png" className="w-[264px]"/>
           </div>
