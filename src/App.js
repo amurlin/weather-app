@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { Search } from './components/Search';
+// import { Search } from './components/Search';
 
 function App() {
   
 
   return (
-    <div className="flex flex-row relative" >
+    <div className="flex flex-row relative overflow-hidden" >
       {/* {weatherLoading && <p>Weather loading ...</p>}
       <Search setSelectedCity={setSelectedCity}/> */}
       {/* <div className= "w-[100%] z-50 absolute flex justify-center top-[5rem]">
@@ -19,21 +19,22 @@ function App() {
               })}
           </div>
       </div> */}
-      {/* Background */}
-      <div className="z-10 inset-0 flex items-center justify-center absolute box-border">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[210px] h-[210px] flex flex-col items-center overflow-hidden box-border">
-          <div className="top-1/2 left-1/2 bg-[#0F141E] rounded-l-2xl w-[100px] h-[100px] box-border" style={{ clipPath: "polygon(0 0, 50% 0, 50% 100%, 0 100%)"}}></div>
-          <div>
-          <div className="border border-gray-300 rounded-full w-[140px] h-[140px] bg-[#F3F4F6] box-border flex flex-row justify-center items-center gap-3">
+      {/* Background  {{{ 1140 deer ajillahgui !!}}} */}
+      <div className="z-10 inset-0 flex items-center justify-center absolute box-border">  
+        <div className="absolute w-[140px] h-[243px] bg-[#F3F4F6] flex flex-col items-end justify-between ">
+          <div className='w-[70px] h-[70px] bg-[#0F141E] ml-[0px] mb-[0px] pl-[70px] rounded-bl-[100%]'></div>
+          <div className="w-[70px] h-[70px] bg-[#0F141E] ml-[0px] mb-[0px] pl-[70px] rounded-tl-[100%]"></div>
+          <div className='w-[35px] h-[240px] bg-[#0F141E] absolute'></div>
+        </div>
+        <div className="w-[140px] h-[140px] border border-[#888888] bg-[#F3F4F6] border-opacity-10 rounded-full ] box-border flex flex-row justify-center z-10 items-center gap-3">
             <img alt="logo-1" src="./img/logo-left.png" style={{width: "43px", height: "86px"}}/>
             <img alt="logo-2" src="./img/logo-right.png" style={{width: "43px", height: "86px"}}/>
-          </div>
-          </div>
-          <div className="bottom-1/2 bg-[#0F141E] rounded-l-2xl w-[100px] h-[100px] box-border"></div>
         </div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-gray-300 rounded-full w-[340px] h-[340px]"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-gray-300 rounded-full w-[540px] h-[540px]"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-gray-300 rounded-full w-[940px] h-[940px]"></div>
+        <div className="w-[340px] h-[340px] border border-[#888888] border-opacity-10 rounded-[50%] absolute"></div>
+        <div className="w-[540px] h-[540px] border border-[#888888] border-opacity-10 rounded-[50%] absolute"></div>
+        <div className="w-[940px] h-[940px] border border-[#888888] border-opacity-10 rounded-[50%] absolute"></div>
+        <div className="w-[1340px] h-[1340px] border border-[#888888] border-opacity-10 rounded-[50%] absolute"></div>
+        <div className="w-[1740px] h-[1740px] border border-[#888888] border-opacity-10 rounded-[50%] absolute"></div>
       </div>
       {/* Left */}
       <div className="w-[100%] h-screen bg-[#F3F4F6] flex items-center justify-center ">
@@ -56,7 +57,7 @@ function App() {
               </div>
             </div>
             <img alt="sun" src="./img/icon-sun.png" className="w-[264px] drop-shadow-[0_0_30px_orange]"/>
-            <div className="text-[#111827] text-9xl font-bold">-10.6</div>
+            <div className="bg-gradient-to-t from-[#676775] to-[#222230] text-9xl font-bold inline-block text-transparent bg-clip-text text">-10.6</div>
             <div className="text-[#FF8E27] h-6">Bright</div>
           </div>
         </div>
@@ -82,7 +83,7 @@ function App() {
               </div>
             </div>
             <img alt="moon" src="./img/icon-moon.png" className="w-[264px] drop-shadow-[0_0_30px_white]"/>
-            <div className="text-white text-9xl font-bold">-20.6</div>
+            <div className="bg-gradient-to-t from-[#515151] to-[#dbdbdb] text-9xl font-bold inline-block text-transparent bg-clip-text text">-20.6</div>
             <div className="text-[#777CCE] h-6">Clear</div>
           </div>
         </div>
